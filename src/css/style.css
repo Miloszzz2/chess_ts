@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #f0d9b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board .row:nth-child(odd) .square:nth-child(even) {
+  background-color: #b58863;
+}
+
+#board .row:nth-child(even) .square:nth-child(odd) {
+  background-color: #b58863;
+}
